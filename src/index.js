@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap"
 import './styles/styles.css';
 
-import Home from './components/home.jsx';
+import Home from './components/Home.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

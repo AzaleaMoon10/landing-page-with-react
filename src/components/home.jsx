@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./navbar.jsx";
-import Jumbotron from "./jumbotron.jsx";
-import Card from "./card.jsx";
-import Footer from "./footer.jsx";
+import Navbar from "./Navbar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 const cards = [
 	{
@@ -31,16 +31,14 @@ const Home = () => {
 	return (
 		<div className="">
             <Navbar/>
-			<div className="col-12 col-sm-6 col-md-8 col-lg-8 mt-4 mx-auto">
+			<div className="container mx-auto mt-3">
 				<Jumbotron/>
-				<div className="container mt-3 p-0">
-					<div class="row">
-						{cards.map((item, index) => (
-							<div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
-								<Card cards={item} />
-							</div>
-						))}
-					</div>
+				<div class="row mt-3">
+					{cards.map((item, index) => (
+						<div className="col-12 col-sm-12 col-md-6 col-lg-3 mb-4" key={index}>
+							<Card cards={item} />
+						</div>
+					))}
 				</div>
 			</div>
 			<Footer/>
